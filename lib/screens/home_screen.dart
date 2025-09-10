@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:maestria/screens/settings_screen.dart';
+import 'package:maestria/screens/stats_screen.dart';
+import 'package:maestria/screens/theme_screen.dart';
 import 'package:provider/provider.dart';
 import '../providers/timer_provider.dart';
 
@@ -46,7 +49,22 @@ class HomeScreen extends StatelessWidget {
         actions: [
           PopupMenuButton<String>(
             onSelected: (value) {
-              // Ici on pourra ajouter les fonctions futures : paramètres, thèmes, stats
+              if (value == 'settings') {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const SettingsScreen()),
+                );
+              } else if (value == 'theme') {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const ThemeScreen()),
+                );
+              } else if (value == 'stats') {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const StatsScreen()),
+                );
+              }
             },
             itemBuilder: (BuildContext context) {
               return [
@@ -64,7 +82,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ];
             },
-          ),
+          )
         ],
       ),
       body: SingleChildScrollView(

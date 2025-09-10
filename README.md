@@ -1,36 +1,31 @@
 # 📘 Maestria
-> **Révisions maîtrisées et optimisées**  
-Application Flutter minimaliste qui combine **technique Pomodoro** et **révisions espacées** pour des sessions d’étude efficaces.
+> Révisions maîtrisées et optimisées
+
+Maestria est une application Flutter pour gérer vos sessions de révision avec un **minuteur intelligent**, cycles automatiques et feedback rapide.
 
 ---
 
-## 🚀 Fonctionnalités
-- ⏱️ Timer personnalisable (travail, pauses courtes et longues)
+## 🚀 Fonctionnalités V1
+- ⏱️ Timer configurable (Travail, Pause courte, Pause longue)
 - 🔄 Cycles automatiques avec pause longue après X sessions
 - ✅ Feedback après chaque session (Facile / Moyen / Difficile)
-- 📊 Historique simple pour suivre sa progression
-- 🔔 Notifications locales (à venir)
-- 🗂️ Sauvegarde de l’historique (à venir)
+- 🗑️ Historique des sessions avec possibilité de suppression
+- 🎨 Design clair et mode sombre natif
+- 📂 Menu AppBar pour futures pages : Paramètres, Thème, Statistiques
 
 ---
 
 ## 🛠️ Stack technique
-- **Flutter** (Dart)
-- **Provider** (state management)
-- **Hive** (stockage local prévu)
-- **flutter_local_notifications** (notifications prévues)
-
----
-
-## 📸 Captures d’écran
-*(à ajouter plus tard)*
+- Flutter (Dart)
+- Provider pour la gestion d'état
+- Google Fonts pour la typographie
+- Pages modulaires et structure optimisée
 
 ---
 
 ## 📦 Installation
-Clone le projet :
 ```bash
-git clone https://github.com/TON_NOM/maestria.git
+git clone https://github.com/newton2k06/Maestria.git
 cd maestria
 flutter pub get
 flutter run
