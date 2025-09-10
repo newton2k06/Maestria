@@ -1,16 +1,36 @@
-# maestria
+# 📘 Maestria
+> **Révisions maîtrisées et optimisées**  
+Application Flutter minimaliste qui combine **technique Pomodoro** et **révisions espacées** pour des sessions d’étude efficaces.
 
-Maestria
+---
 
-## Getting Started
+## 🚀 Fonctionnalités
+- ⏱️ Timer personnalisable (travail, pauses courtes et longues)
+- 🔄 Cycles automatiques avec pause longue après X sessions
+- ✅ Feedback après chaque session (Facile / Moyen / Difficile)
+- 📊 Historique simple pour suivre sa progression
+- 🔔 Notifications locales (à venir)
+- 🗂️ Sauvegarde de l’historique (à venir)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Stack technique
+- **Flutter** (Dart)
+- **Provider** (state management)
+- **Hive** (stockage local prévu)
+- **flutter_local_notifications** (notifications prévues)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Captures d’écran
+*(à ajouter plus tard)*
+
+---
+
+## 📦 Installation
+Clone le projet :
+```bash
+git clone https://github.com/TON_NOM/maestria.git
+cd maestria
+flutter pub get
+flutter run
