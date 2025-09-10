@@ -80,4 +80,38 @@ class TimerProvider extends ChangeNotifier {
     history.add("${currentSession.name} → $feedback");
     notifyListeners();
   }
+  // Ajout de setters pour modifier les paramètres
+  void setWorkDuration(int minutes) {
+    workDuration = minutes.clamp(1, 180);
+    if (currentSession == SessionType.work && !isRunning) {
+      remainingSeconds = workDuration * 60;
+      notifyListeners();
+    }
+  }
+
+  void setShortBreak(int minutes) {
+    shortBreak = minutes.clamp(1, 120);
+    if (currentSession == SessionType.shortBreak && !isRunning) {
+      remainingSeconds = shortBreak * 60;
+      notifyListeners();
+    }
+  }
+
+  void setLongBreak(int minutes) {
+    longBreak = minutes.clamp(1, 240);
+    if (currentSession == SessionType.longBreak && !isRunning) {
+      remainingSeconds = longBreak * 60;
+      notifyListeners();
+    }
+  }
+
+  void setCyclesBeforeLongBreak(int cycles) {
+    cyclesBeforeLongBreak = cycles.clamp(1, 10);
+    notifyListeners();
+  }
+  void clearHistory() {
+    history.clear();
+    notifyListeners();
+  }
+
 }
